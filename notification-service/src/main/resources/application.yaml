@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: notification-service
+  datasource:
+    url: ${url}
+    username: ${username:}
+    password: ${password:}
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+    format-sql: true
+  kafka:
+    bootstrap-servers: ${KAFKA_BOOTSTRAP_SERVERS}
+
+server:
+  port: 9001
