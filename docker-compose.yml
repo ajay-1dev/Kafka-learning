@@ -1,0 +1,10 @@
+services:
+  kafka-docker:
+    image: apache/kafka:4.3.1
+    container_name: kafka-learning
+    ports:
+      - "9092:9092"
+    volumes:
+      - learnkafka-data:/var/lib/kafka/data
+volumes:
+   learnkafka-data:
